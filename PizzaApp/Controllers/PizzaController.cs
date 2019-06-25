@@ -19,10 +19,50 @@ namespace PizzaApp.Controllers
         public IActionResult Index()
         {
 
+            List<Pizza> pizzaList = _pizzaService.GetAllPizzas();;
+            return View(pizzaList);
+        }
+        public IActionResult Details(int id)
+        {
             List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
-
-            MenuViewModel menu = new MenuViewModel("Enrico", pizzaList);
-            return View(menu);
+            Pizza pizza = pizzaList.FirstOrDefault(x => x.Id == id);
+            return View(pizza);
+        }
+        public IActionResult Edit(int id)
+        {
+            List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
+            Pizza edited = pizzaList.FirstOrDefault(x => x.Id == id);
+            return View(edited);
+        }
+        [HttpPost]
+        public IActionResult Edit(Pizza pizza)
+        {
+            List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
+            int index = pizzaList.FindIndex(x => x.Id == pizza.Id);
+            pizzaList[index] = pizza;
+            return View("Index",pizzaList);
+        }
+        public IActionResult Delete(int id)
+        {
+            List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
+            Pizza deleted = pizzaList.FirstOrDefault(x => x.Id == id);
+            pizzaList.Remove(deleted);
+            return View("Index", pizzaList);
+        }
+        public IActionResult Add()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Add(Pizza pizza)
+        {
+            List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            pizzaList.Add(pizza);
+            return View("Index", pizzaList);
         }
     }
 }

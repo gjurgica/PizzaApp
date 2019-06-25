@@ -1,0 +1,9 @@
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\bin\Debug\netcoreapp2.1\PizzaAppDomain.deps.json
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\bin\Debug\netcoreapp2.1\PizzaAppDomain.dll
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\bin\Debug\netcoreapp2.1\PizzaAppDomain.pdb
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\obj\Debug\netcoreapp2.1\PizzaAppDomain.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\obj\Debug\netcoreapp2.1\PizzaAppDomain.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\obj\Debug\netcoreapp2.1\PizzaAppDomain.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\obj\Debug\netcoreapp2.1\PizzaAppDomain.AssemblyInfo.cs
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\obj\Debug\netcoreapp2.1\PizzaAppDomain.dll
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppDomain\obj\Debug\netcoreapp2.1\PizzaAppDomain.pdb

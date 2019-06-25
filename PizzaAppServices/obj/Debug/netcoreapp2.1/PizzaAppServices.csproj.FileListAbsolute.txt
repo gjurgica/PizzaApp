@@ -1,0 +1,14 @@
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\bin\Debug\netcoreapp2.1\PizzaAppServices.deps.json
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\bin\Debug\netcoreapp2.1\PizzaAppServices.dll
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\bin\Debug\netcoreapp2.1\PizzaAppServices.pdb
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\bin\Debug\netcoreapp2.1\PizzaAppDataAccess.dll
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\bin\Debug\netcoreapp2.1\PizzaAppDomain.dll
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\bin\Debug\netcoreapp2.1\PizzaAppDataAccess.pdb
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\bin\Debug\netcoreapp2.1\PizzaAppDomain.pdb
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\obj\Debug\netcoreapp2.1\PizzaAppServices.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\obj\Debug\netcoreapp2.1\PizzaAppServices.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\obj\Debug\netcoreapp2.1\PizzaAppServices.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\obj\Debug\netcoreapp2.1\PizzaAppServices.AssemblyInfo.cs
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\obj\Debug\netcoreapp2.1\PizzaAppServices.csproj.CopyComplete
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\obj\Debug\netcoreapp2.1\PizzaAppServices.dll
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaAppServices\obj\Debug\netcoreapp2.1\PizzaAppServices.pdb

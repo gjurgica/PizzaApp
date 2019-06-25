@@ -1,42 +1,31 @@
 ﻿@using System.Globalization
-@model PizzaApp.ViewModels.MenuViewModel
+@using PizzaAppDomain
+@model List<Pizza>
 
 @{
-    ViewData["Title"] = Model.RestaurantName;
+    ViewData["Title"] = "Index";
     var small = PizzaAppDomain.PizzaSize.Small;
     var medium = PizzaAppDomain.PizzaSize.Medium;
     var large = PizzaAppDomain.PizzaSize.Large;
 }
 
-<h2>@Model.RestaurantName</h2>
+<h2>Enrico</h2>
 <br />
 
 <div class="container">
     <table class="table">
-        <thead>
-            <tr>
-                <th>Pizza</th>
-                @{
-                    foreach (var size in Model.Sizes)
-                    {
-                        <th>@size.ToString()</th>
-                    }
-                }
-                <th>Actions</th>
-            </tr>
-        </thead>
         <tbody>
             @{
-                foreach (var pizza in Model.Pizzas)
+                foreach (var pizza in Model)
                 {
                     <tr>
                         <td>
                             <h4>@pizza.Name</h4>
                             <p>@pizza.Description</p>
                         </td>
-                        <td>@pizza.GetPrice(small).ToString("C", new CultureInfo("mk-MK"))</td>
-                        <td>@pizza.GetPrice(medium).ToString("C", new CultureInfo("mk-MK"))</td>
-                        <td>@pizza.GetPrice(large).ToString("C", new CultureInfo("mk-MK"))</td>
+                        <td>Small: @pizza.GetPrice(small).ToString("C", new CultureInfo("mk-MK"))</td>
+                        <td>Medium: @pizza.GetPrice(medium).ToString("C", new CultureInfo("mk-MK"))</td>
+                        <td>Large: @pizza.GetPrice(large).ToString("C", new CultureInfo("mk-MK"))</td>
                         <td>
                             <a asp-action="Details" asp-controller="Pizza" asp-route-id="@pizza.Id">Details</a> |
                             <a asp-action="Edit" asp-controller="Pizza" asp-route-id="@pizza.Id">Edit</a> |
@@ -48,5 +37,5 @@
             }
         </tbody>
     </table>
-    <a asp-action="Create" asp-controller="Pizza" class="btn btn-primary">Create new pizza</a>
+    <a asp-action="Add" asp-controller="Pizza" class="btn btn-primary">Create new pizza</a>
 </div>
