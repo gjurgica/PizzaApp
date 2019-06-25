@@ -1,0 +1,18 @@
+﻿@using PizzaAppDomain
+@model List<User>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Users</h2>
+<br />
+@foreach (var user in Model)
+{
+<ul class="list-group">
+    <li class="list-group-item">@user.FirstName @user.LastName 
+    <a asp-action="Details" asp-controller="User" asp-route-id="@user.Id">Details</a> |
+    <a asp-action="Edit" asp-controller="User" asp-route-id="@user.Id">Edit</a> |
+    <a asp-action="Delete" asp-controller="User" asp-route-id="@user.Id">Delete</a></li>
+</ul>
+}
+<a asp-action="Create" asp-controller="User" class="btn btn-primary">Create new user</a>

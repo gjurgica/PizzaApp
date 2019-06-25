@@ -1,0 +1,20 @@
+﻿@model PizzaApp.ViewModels.OrderViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h4 class="card-title">@Model.RestorantName</h4>
+        @foreach(var pizza in Model.Pizzas){
+        <h6 class="card-subtitle mb-2 text-muted">@pizza.Name - @pizza.GetPrice(pizza.Size)</h6>
+        }
+        <h5>Total price:@Model.TotalPrice</h5>
+        <a asp-action="Details" asp-controller="Order">Details</a> |
+        <a asp-action="Edit" asp-controller="Order">Edit</a> |
+        <a asp-action="Delete" asp-controller="Order">Delete</a>
+    </div>
+</div>
+
+
