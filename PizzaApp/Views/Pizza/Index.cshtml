@@ -4,9 +4,6 @@
 
 @{
     ViewData["Title"] = "Index";
-    var small = PizzaAppDomain.PizzaSize.Small;
-    var medium = PizzaAppDomain.PizzaSize.Medium;
-    var large = PizzaAppDomain.PizzaSize.Large;
 }
 
 <h2>Enrico</h2>
@@ -23,9 +20,9 @@
                             <h4>@pizza.Name</h4>
                             <p>@pizza.Description</p>
                         </td>
-                        <td>Small: @pizza.GetPrice(small).ToString("C", new CultureInfo("mk-MK"))</td>
-                        <td>Medium: @pizza.GetPrice(medium).ToString("C", new CultureInfo("mk-MK"))</td>
-                        <td>Large: @pizza.GetPrice(large).ToString("C", new CultureInfo("mk-MK"))</td>
+                        <td>Small: @pizza.GetPrice(PizzaSize.Small).ToString("C", new CultureInfo("mk-MK"))</td>
+                        <td>Medium: @pizza.GetPrice(PizzaSize.Medium).ToString("C", new CultureInfo("mk-MK"))</td>
+                        <td>Large: @pizza.GetPrice(PizzaSize.Large).ToString("C", new CultureInfo("mk-MK"))</td>
                         <td>
                             <a asp-action="Details" asp-controller="Pizza" asp-route-id="@pizza.Id">Details</a> |
                             <a asp-action="Edit" asp-controller="Pizza" asp-route-id="@pizza.Id">Edit</a> |

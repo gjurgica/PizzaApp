@@ -30,23 +30,20 @@ namespace PizzaApp.Controllers
         }
         public IActionResult Edit(int id)
         {
-            List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
-            Pizza edited = pizzaList.FirstOrDefault(x => x.Id == id);
-            return View(edited);
+            Pizza pizza = _pizzaService.GetPizzaById(id);
+            return View(pizza);
         }
         [HttpPost]
-        public IActionResult Edit(Pizza pizza)
+        public IActionResult EditPizza(Pizza pizza)
         {
             List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
-            int index = pizzaList.FindIndex(x => x.Id == pizza.Id);
-            pizzaList[index] = pizza;
+            _pizzaService.UpdatePizza(pizza);
             return View("Index",pizzaList);
         }
         public IActionResult Delete(int id)
         {
             List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
-            Pizza deleted = pizzaList.FirstOrDefault(x => x.Id == id);
-            pizzaList.Remove(deleted);
+            _pizzaService.DeletePizza(id);
             return View("Index", pizzaList);
         }
         public IActionResult Add()
@@ -61,7 +58,7 @@ namespace PizzaApp.Controllers
             {
                 return View();
             }
-            pizzaList.Add(pizza);
+            _pizzaService.CreatePizza(pizza);
             return View("Index", pizzaList);
         }
     }

@@ -63,7 +63,7 @@ namespace PizzaApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Pizza}/{action=Index}/{id?}");
+                    template: "{controller=Order}/{action=Index}/{id?}");
             });
         }
     }

@@ -18,16 +18,8 @@ namespace PizzaApp.Controllers
         }
         public IActionResult Index()
         {
-            OrderViewModel order = new OrderViewModel
-            {
-                RestorantName = "Enrico",
-                Pizzas = new List<Pizza>
-                {
-                    new Pizza(1, "Capri", "The best capri pizza in town!", 160),
-                    new Pizza(2, "Pepperoni", "The best pepperoni pizza in town!", 180),
-                }
-            };
-            return View(order);
+            List<Order> orders = _orderService.GetAllOrders();
+            return View(orders);
         }
     }
 }

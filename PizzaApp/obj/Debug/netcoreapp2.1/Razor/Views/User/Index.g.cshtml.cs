@@ -99,7 +99,7 @@ using PizzaAppDomain;
             WriteLiteral(" \r\n    ");
             EndContext();
             BeginContext(236, 81, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fd6f898087a44439d68aecec988152c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec4408ef7bd549a4ac5942c553b4ec00", async() => {
                 BeginContext(306, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -136,7 +136,7 @@ using PizzaAppDomain;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(325, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a73aa7505424a9fa696ec7aa11b5a20", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f01ade4b215c43ec8654aa5c98b3206c", async() => {
                 BeginContext(392, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -173,7 +173,7 @@ using PizzaAppDomain;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(408, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95ad9cb5bc48467d9e6356aa2b8c8839", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce0785a1781e4c1e8e83f9471dfd6938", async() => {
                 BeginContext(477, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
@@ -215,7 +215,7 @@ using PizzaAppDomain;
 #line default
 #line hidden
             BeginContext(504, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84f6f745d92e43758219bd645f42ea3d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92977212f18c42aa9a06e7a71eaccf3f", async() => {
                 BeginContext(573, 15, true);
                 WriteLiteral("Create new user");
                 EndContext();
