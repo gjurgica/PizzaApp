@@ -8,18 +8,20 @@
 {
 <div class="card" style="width: 18rem;">
     <div class="card-body">
-        <h4 class="card-title">@order.User.FirstName @order.User.LastName</h4>
+        <h4 class="card-title">Enrico</h4>
         @foreach (var pizza in order.Pizzas)
         {
-            <h6 class="card-subtitle mb-2 text-muted">@pizza.Name - @pizza.GetPrice(pizza.Size)</h6>
+            <h6 class="card-subtitle mb-2 text-muted">@pizza.PizzaName - @pizza.GetPrice(pizza.Size)</h6>
         }
         <h5>Total price:@order.TotalPrice</h5>
-        <a asp-action="Details" asp-controller="Order">Details</a> |
-        <a asp-action="Edit" asp-controller="Order">Edit</a> |
-        <a asp-action="Delete" asp-controller="Order">Delete</a>
+        <a asp-action="Details" asp-controller="Order" asp-route-id="@order.Id">Details</a> |
+        <a asp-action="Edit" asp-controller="Order"asp-route-id="@order.Id" >Edit</a> |
+        <a asp-action="Delete" asp-controller="Order" asp-route-id="@order.Id">Delete</a>
     </div>
 </div>
+    <br/>
 }
 <br/>
-<a asp-action="Create" asp-controller="Order" class="btn btn-primary">Create new order</a>
+<br/>
+<a asp-action="Add" asp-controller="Order" class="btn btn-primary">Create new order</a>
 

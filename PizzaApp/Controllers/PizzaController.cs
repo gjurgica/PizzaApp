@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using PizzaApp.ViewModels;
 using PizzaAppDomain;
 using PizzaAppServices;
 
@@ -36,6 +35,10 @@ namespace PizzaApp.Controllers
         [HttpPost]
         public IActionResult EditPizza(Pizza pizza)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
             List<Pizza> pizzaList = _pizzaService.GetAllPizzas();
             _pizzaService.UpdatePizza(pizza);
             return View("Index",pizzaList);

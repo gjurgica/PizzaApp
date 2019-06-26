@@ -6,13 +6,20 @@
 
 <h2>Users</h2>
 <br />
+
 @foreach (var user in Model)
 {
-<ul class="list-group">
-    <li class="list-group-item">@user.FirstName @user.LastName 
-    <a asp-action="Details" asp-controller="User" asp-route-id="@user.Id">Details</a> |
-    <a asp-action="Edit" asp-controller="User" asp-route-id="@user.Id">Edit</a> |
-    <a asp-action="Delete" asp-controller="User" asp-route-id="@user.Id">Delete</a></li>
-</ul>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h4 class="card-title">User</h4>
+            <h5 class="card-subtitle mb-2 text-muted">@user.FirstName @user.LastName</h5>
+            <a asp-action="Details" asp-controller="User" asp-route-id="@user.Id">Details</a> |
+            <a asp-action="Edit" asp-controller="User" asp-route-id="@user.Id">Edit</a> |
+            <a asp-action="Delete" asp-controller="User" asp-route-id="@user.Id">Delete</a>
+        </div>
+    </div>
+    <br />
 }
-<a asp-action="Create" asp-controller="User" class="btn btn-primary">Create new user</a>
+<br />
+<br />
+<a asp-action="Add" asp-controller="User" class="btn btn-primary">Create new user</a>

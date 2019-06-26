@@ -6,18 +6,18 @@ namespace PizzaAppDomain
 {
     public class Pizza
     {
-        public Pizza(int id, string name, string description, int price)
+        public Pizza(int id, PizzaName name, string description, int price)
         {
             Id = id;
-            Name = name;
+            PizzaName = name;
             Description = description;
             Price = price;
         }
         public Pizza() { }
         public int Id { get; set; }
-        public string Name { get; set; }
         public string Description { get; set; }
         public PizzaSize Size { get; set; }
+        public PizzaName PizzaName { get; set; }
 
         public  int Price { get; set; }
 

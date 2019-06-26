@@ -42,3 +42,8 @@ C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreap
 C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreapp2.1\Razor\Views\Pizza\Details.g.cshtml.cs
 C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreapp2.1\Razor\Views\Pizza\Edit.g.cshtml.cs
 C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreapp2.1\Razor\Views\Pizza\Add.g.cshtml.cs
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreapp2.1\Razor\Views\Order\Details.g.cshtml.cs
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreapp2.1\Razor\Views\Order\Edit.g.cshtml.cs
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreapp2.1\Razor\Views\User\Details.g.cshtml.cs
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreapp2.1\Razor\Views\User\Add.g.cshtml.cs
+C:\Users\Asus\Desktop\practicingCoding\MVC\PizzaApp\PizzaApp\obj\Debug\netcoreapp2.1\Razor\Views\User\Edit.g.cshtml.cs

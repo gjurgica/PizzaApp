@@ -1,0 +1,15 @@
+﻿@using PizzaAppDomain
+@model User
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h4 class="card-title">@Model.FirstName @Model.LastName</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Address: @Model.Address</h5>
+        <p class="card-text">Email: @Model.Email Phone: @Model.Phone</p>
+    </div>
+</div>

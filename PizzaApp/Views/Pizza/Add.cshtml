@@ -12,9 +12,9 @@
         <form asp-action="Add">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="PizzaName" class="control-label"></label>
+                <input asp-for="PizzaName" class="form-control" />
+                <span asp-validation-for="PizzaName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
@@ -39,6 +39,3 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="/Menu/PizzaList">Back to List</a>
-</div>
