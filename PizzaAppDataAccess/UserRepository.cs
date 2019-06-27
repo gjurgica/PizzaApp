@@ -40,7 +40,7 @@ namespace PizzaAppDataAccess
             if(user != null)
             {
                 int index = StorageDb.Users.IndexOf(user);
-                StorageDb.Users[index] = user;
+                StorageDb.Users[index] = entity;
             }
         }
     }

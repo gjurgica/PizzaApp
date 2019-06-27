@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PizzaAppDataAccess
 {
-    public class StorageDb
+    public static class StorageDb
     {
         public static int PizzaId = 3;
         public static int OrderId = 2;

@@ -40,7 +40,7 @@ namespace PizzaAppDataAccess
             if(order != null)
             {
                 int index = StorageDb.Orders.IndexOf(order);
-                StorageDb.Orders[index] = order;
+                StorageDb.Orders[index] = entity;
             }
         }
     }
